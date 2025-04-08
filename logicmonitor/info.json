@@ -14,7 +14,6 @@
             {
                 "name": "account_name",
                 "title": "Account Name",
-                "parameter_type": "request_param",
                 "description": "Specify your LogicMonitor account name.",
                 "tooltip": "Specify your LogicMonitor account name.",
                 "required": true,
@@ -26,7 +25,6 @@
             {
                 "name": "token",
                 "title": "Bearer Token",
-                "parameter_type": "request_param",
                 "description": "Specify the bearer token to authenticate LogicMonitor REST API. Refer: https://www.logicmonitor.com/support/adding-a-bearer-token",
                 "tooltip": "Specify your LogicMonitor bearer token.",
                 "required": true,
@@ -38,7 +36,6 @@
             {
                 "name": "verify_ssl",
                 "title": "Verify SSL",
-                "parameter_type": "request_param",
                 "description": "Specifies whether the SSL certificate for the server is to be verified. By default, this option is set to True.",
                 "tooltip": "Enable or disable SSL verification.",
                 "required": false,
@@ -54,8 +51,6 @@
             "operation": "get_alert_list",
             "title": "Get Alert List",
             "annotation": "get_alert_list",
-            "endpoint": "/alert/alerts",
-            "http_method": "GET",
             "category": "investigation",
             "description": "Retrieve a list of alerts from LogicMonitor based on the input parameters you have specified.",
             "enabled": true,
@@ -64,7 +59,6 @@
                 {
                     "name": "filter",
                     "title": "Filter Criteria",
-                    "parameter_type": "query",
                     "description": "Specify a filter for the results.",
                     "tooltip": "Filter criteria for the results.",
                     "required": false,
@@ -75,7 +69,6 @@
                 {
                     "name": "fields",
                     "title": "Fields to Retrieve",
-                    "parameter_type": "query",
                     "description": "Specify the comma-separated list of fields to include in the response.",
                     "tooltip": "Comma-separated list of fields to include in the response.",
                     "required": false,
@@ -86,7 +79,6 @@
                 {
                     "name": "size",
                     "title": "Limit",
-                    "parameter_type": "query",
                     "description": "Specify the number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "tooltip": "Number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "required": false,
@@ -97,7 +89,6 @@
                 {
                     "name": "offset",
                     "title": "Offset",
-                    "parameter_type": "query",
                     "description": "Specify the count of the first few records to skip while retrieving the result. The maximum offset allowed is 10,000 alerts.",
                     "tooltip": "Count of records to skip while retrieving the result. The maximum offset allowed is 10,000 alerts.",
                     "required": false,
@@ -173,8 +164,6 @@
             "operation": "get_device_group_list",
             "title": "Get Device Group List",
             "annotation": "get_device_group_list",
-            "endpoint": "/device/groups",
-            "http_method": "GET",
             "category": "investigation",
             "description": "Retrieve a list of device groups from LogicMonitor based on the input parameters you have specified.",
             "enabled": true,
@@ -183,7 +172,6 @@
                 {
                     "name": "filter",
                     "title": "Filter Criteria",
-                    "parameter_type": "query",
                     "description": "Specify a filter for the results.",
                     "tooltip": "Filter criteria for the results.",
                     "required": false,
@@ -194,7 +182,6 @@
                 {
                     "name": "fields",
                     "title": "Fields to Retrieve",
-                    "parameter_type": "query",
                     "description": "Specify the comma-separated list of fields to include in the response.",
                     "tooltip": "Comma-separated list of fields to include in the response.",
                     "required": false,
@@ -205,7 +192,6 @@
                 {
                     "name": "size",
                     "title": "Limit",
-                    "parameter_type": "query",
                     "description": "Specify the number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "tooltip": "Number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "required": false,
@@ -216,7 +202,6 @@
                 {
                     "name": "offset",
                     "title": "Offset",
-                    "parameter_type": "query",
                     "description": "Specify the count of the first few records to skip while retrieving the result.",
                     "tooltip": "Count of records to skip while retrieving the result.",
                     "required": false,
@@ -321,8 +306,6 @@
             "operation": "get_device_list",
             "title": "Get Device List",
             "annotation": "get_device_list",
-            "endpoint": "/device/devices",
-            "http_method": "GET",
             "category": "investigation",
             "description": "Retrieve a list of devices from LogicMonitor based on the input parameters you have specified.",
             "enabled": true,
@@ -331,7 +314,6 @@
                 {
                     "name": "start",
                     "title": "Start Time",
-                    "parameter_type": "query",
                     "description": "Specify the start time for the query.",
                     "tooltip": "Start time in epoch format.",
                     "required": false,
@@ -342,7 +324,6 @@
                 {
                     "name": "end",
                     "title": "End Time",
-                    "parameter_type": "query",
                     "description": "Specify the end time for the query.",
                     "tooltip": "End time in epoch format.",
                     "required": false,
@@ -353,7 +334,6 @@
                 {
                     "name": "netflowFilter",
                     "title": "Netflow Filter",
-                    "parameter_type": "query",
                     "description": "Specify a filter for netflow data.",
                     "tooltip": "Filter criteria for netflow.",
                     "required": false,
@@ -364,7 +344,6 @@
                 {
                     "name": "filter",
                     "title": "Filter Criteria",
-                    "parameter_type": "query",
                     "description": "Specify a filter for the results.",
                     "tooltip": "Filter criteria for the results.",
                     "required": false,
@@ -375,7 +354,6 @@
                 {
                     "name": "includeDeletedResources",
                     "title": "Include Deleted Resources",
-                    "parameter_type": "query",
                     "description": "Specify whether to include deleted resources.",
                     "tooltip": "Set to true to include deleted resources.",
                     "required": false,
@@ -387,7 +365,6 @@
                 {
                     "name": "fields",
                     "title": "Fields to Retrieve",
-                    "parameter_type": "query",
                     "description": "Specify the comma-separated list of fields to include in the response.",
                     "tooltip": "Comma-separated list of fields to include in the response.",
                     "required": false,
@@ -398,7 +375,6 @@
                 {
                     "name": "size",
                     "title": "Limit",
-                    "parameter_type": "query",
                     "description": "Specify the number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "tooltip": "Number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "required": false,
@@ -409,7 +385,6 @@
                 {
                     "name": "offset",
                     "title": "Offset",
-                    "parameter_type": "query",
                     "description": "Specify the count of the first few records to skip while retrieving the result.",
                     "tooltip": "Count of records to skip while retrieving the result.",
                     "required": false,
@@ -506,8 +481,6 @@
             "operation": "get_device_alerts",
             "title": "Get Device Alerts",
             "annotation": "get_device_alerts",
-            "endpoint": "/device/devices/{id}/alerts",
-            "http_method": "GET",
             "category": "investigation",
             "description": "Retrieve alerts for a specific device from LogicMonitor based on the input parameters you have specified.",
             "enabled": true,
@@ -516,7 +489,6 @@
                 {
                     "name": "id",
                     "title": "Device ID",
-                    "parameter_type": "path",
                     "description": "Specify the ID of the device to retrieve alerts.",
                     "tooltip": "The ID of the device to retrieve alerts for.",
                     "required": true,
@@ -527,7 +499,6 @@
                 {
                     "name": "start",
                     "title": "Start Time",
-                    "parameter_type": "query",
                     "description": "Specify the start time for the query.",
                     "tooltip": "Start time in epoch format.",
                     "required": false,
@@ -538,7 +509,6 @@
                 {
                     "name": "end",
                     "title": "End Time",
-                    "parameter_type": "query",
                     "description": "Specify the end time for the query.",
                     "tooltip": "End time in epoch format.",
                     "required": false,
@@ -549,7 +519,6 @@
                 {
                     "name": "netflowFilter",
                     "title": "Netflow Filter",
-                    "parameter_type": "query",
                     "description": "Specify a filter for netflow data.",
                     "tooltip": "Filter criteria for netflow.",
                     "required": false,
@@ -560,7 +529,6 @@
                 {
                     "name": "needMessage",
                     "title": "Need Message",
-                    "parameter_type": "query",
                     "description": "Specify whether to include message details.",
                     "tooltip": "Set to true to include message details.",
                     "required": false,
@@ -572,7 +540,6 @@
                 {
                     "name": "customColumns",
                     "title": "Custom Columns",
-                    "parameter_type": "query",
                     "description": "Specify custom columns to include in the response.",
                     "tooltip": "Comma-separated list of custom columns.",
                     "required": false,
@@ -583,7 +550,6 @@
                 {
                     "name": "bound",
                     "title": "Bound",
-                    "parameter_type": "query",
                     "description": "Specify the bound for the alerts.",
                     "tooltip": "Default is 'instances'.",
                     "required": false,
@@ -595,7 +561,6 @@
                 {
                     "name": "filter",
                     "title": "Filter Criteria",
-                    "parameter_type": "query",
                     "description": "Specify a filter for the results.",
                     "tooltip": "Filter criteria for the results.",
                     "required": false,
@@ -606,7 +571,6 @@
                 {
                     "name": "fields",
                     "title": "Fields to Retrieve",
-                    "parameter_type": "query",
                     "description": "Specify the comma-separated list of fields to include in the response.",
                     "tooltip": "Comma-separated list of fields to include in the response.",
                     "required": false,
@@ -617,7 +581,6 @@
                 {
                     "name": "size",
                     "title": "Limit",
-                    "parameter_type": "query",
                     "description": "Specify the number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "tooltip": "Number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "required": false,
@@ -628,7 +591,6 @@
                 {
                     "name": "offset",
                     "title": "Offset",
-                    "parameter_type": "query",
                     "description": "Specify the count of the first few records to skip while retrieving the result. The maximum offset allowed is 10,000 alerts.",
                     "tooltip": "Count of records to skip while retrieving the result. The maximum offset allowed is 10,000 alerts.",
                     "required": false,
@@ -705,8 +667,6 @@
             "operation": "get_report_list",
             "title": "Get Report List",
             "annotation": "get_report_list",
-            "endpoint": "/report/reports",
-            "http_method": "GET",
             "category": "investigation",
             "description": "Retrieve a list of reports from LogicMonitor based on the input parameters you have specified.",
             "enabled": true,
@@ -715,7 +675,6 @@
                 {
                     "name": "filter",
                     "title": "Filter Criteria",
-                    "parameter_type": "query",
                     "description": "Specify a filter for the results.",
                     "tooltip": "Filter criteria for the results.",
                     "required": false,
@@ -726,7 +685,6 @@
                 {
                     "name": "fields",
                     "title": "Fields to Retrieve",
-                    "parameter_type": "query",
                     "description": "Specify the comma-separated list of fields to include in the response.",
                     "tooltip": "Comma-separated list of fields to include in the response.",
                     "required": false,
@@ -737,7 +695,6 @@
                 {
                     "name": "size",
                     "title": "Limit",
-                    "parameter_type": "query",
                     "description": "Specify the number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "tooltip": "Number of results to return. A maximum of 1000 records can be retrieved per request.",
                     "required": false,
@@ -748,7 +705,6 @@
                 {
                     "name": "offset",
                     "title": "Offset",
-                    "parameter_type": "query",
                     "description": "Specify the count of the first few records to skip while retrieving the result.",
                     "tooltip": "Count of records to skip while retrieving the result.",
                     "required": false,
@@ -798,8 +754,6 @@
             "operation": "get_report_by_id",
             "title": "Get Report by ID",
             "annotation": "get_report_by_id",
-            "endpoint": "/report/reports/{id}",
-            "http_method": "GET",
             "category": "investigation",
             "description": "Retrieve a specific report from LogicMonitor based on the report ID you have specified.",
             "enabled": true,
@@ -808,7 +762,6 @@
                 {
                     "name": "id",
                     "title": "Report ID",
-                    "parameter_type": "path",
                     "description": "Specify the ID of the report.",
                     "tooltip": "The ID of the report to retrieve.",
                     "required": true,
@@ -819,7 +772,6 @@
                 {
                     "name": "fields",
                     "title": "Fields to Retrieve",
-                    "parameter_type": "query",
                     "description": "Specify the comma-separated list of fields to include in the response.",
                     "tooltip": "Comma-separated list of fields to include in the response.",
                     "required": false,

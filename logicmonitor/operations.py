@@ -20,7 +20,7 @@ def make_api_call(method="GET", endpoint="", config=None, params=None, headers=N
     try:
         default_headers = {
             "Authorization": f"Bearer {config.get('token')}",
-            "X-Version": 3
+            "X-Version": "3"
         }
         url = f"https://{config.get('account_name')}.logicmonitor.com/santaba/rest{endpoint}"
         if headers:
@@ -31,7 +31,7 @@ def make_api_call(method="GET", endpoint="", config=None, params=None, headers=N
         logger.debug("data: "+str(data))
         logger.debug("json_data: "+str(json_data))
 
-        response = requests.request(method=method, url=endpoint, headers=headers, data=data, json=json_data, params=params, verify=config.get('verify_ssl'))
+        response = requests.request(method=method, url=url, headers=default_headers, data=data, json=json_data, params=params, verify=config.get('verify_ssl'))
         if response.ok:
             if response.content:
                 response = response.json()

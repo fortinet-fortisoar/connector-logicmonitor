@@ -23,9 +23,7 @@ class LogicMonitor(Connector):
 
     def check_health(self, config):
         try:
-            # Example health check operation
-            response = make_api_call(config=config, endpoint="/device/devices")
-            return response.get('status', '').lower() == 'success'
+            return make_api_call(config=config, endpoint="/device/devices")
         except Exception as err:
             logger.error("Check Health Failed. Error: {0}".format(str(err)))
             raise ConnectorError(str(err))
