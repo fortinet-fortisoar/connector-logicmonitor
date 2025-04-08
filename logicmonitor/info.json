@@ -105,7 +105,69 @@
                     "editable": true,
                     "visible": true
                 }
-            ]
+            ],
+            "output_schema": {
+              "total": 0,
+              "searchId": "string",
+              "items": [
+                {
+                  "resourceId": 0,
+                  "endEpoch": 0,
+                  "threshold": "string",
+                  "type": "string",
+                  "startEpoch": 0,
+                  "enableAnomalyAlertGeneration": "string",
+                  "internalId": "string",
+                  "monitorObjectName": "string",
+                  "dataPointName": "string",
+                  "dataPointId": 0,
+                  "suppressor": "string",
+                  "id": "string",
+                  "ruleId": 0,
+                  "alertExternalTicketUrl": {
+                    "empty": true
+                  },
+                  "tenant": "string",
+                  "alertValue": "string",
+                  "sdted": true,
+                  "SDT": {},
+                  "enableAnomalyAlertSuppression": "string",
+                  "receivedList": "string",
+                  "monitorObjectGroups": {},
+                  "chainId": 0,
+                  "resourceTemplateId": 0,
+                  "cleared": true,
+                  "adAlertDesc": "string",
+                  "resourceTemplateName": "string",
+                  "anomaly": true,
+                  "instanceName": "string",
+                  "monitorObjectId": 0,
+                  "rule": "string",
+                  "ackComment": "string",
+                  "alertGroupEntityValue": "string",
+                  "instanceId": 0,
+                  "suppressDesc": "string",
+                  "logPartition": "string",
+                  "nextRecipient": 0,
+                  "clearExpr": "string",
+                  "adAlert": true,
+                  "ackedBy": "string",
+                  "severity": 0,
+                  "ackedEpoch": 0,
+                  "chain": "string",
+                  "alertQuery": "string",
+                  "subChainId": 0,
+                  "logMetaData": "string",
+                  "monitorObjectType": "string",
+                  "acked": true,
+                  "resourceTemplateType": "string",
+                  "clearValue": "string",
+                  "instanceDescription": "string",
+                  "dependencyRoutingState": "string",
+                  "dependencyRole": "string"
+                }
+              ]
+            }
         },
         {
             "operation": "get_device_group_list",
@@ -162,7 +224,98 @@
                     "editable": true,
                     "visible": true
                 }
-            ]
+            ],
+            "output_schema": {
+                "total": "",
+                "searchId": "",
+                "items": [
+                    {
+                        "fullPath": "",
+                        "groupType": "",
+                        "numOfAWSDevices": "",
+                        "description": "",
+                        "appliesTo": "",
+                        "gcpTestResultCode": "",
+                        "disableAlerting": "",
+                        "numOfKubernetesDevices": "",
+                        "awsRegionsInfo": "",
+                        "createdOn": "",
+                        "rolePrivileges": [],
+                        "hasNetflowEnabledDevices": "",
+                        "numOfAzureDevices": "",
+                        "propertyChangeWarningMessage": "",
+                        "defaultCollectorDescription": "",
+                        "defaultCollectorId": "",
+                        "awsTestResult": {
+                            "warnings": [],
+                            "noPermissionServices": [],
+                            "detailLink": "",
+                            "nonPermissionErrors": []
+                        },
+                        "extra": {},
+                        "numOfDirectSubGroups": "",
+                        "subGroups": [
+                            {
+                                "fullPath": "",
+                                "groupType": "",
+                                "userPermission": "",
+                                "gcpRegionsInfo": "",
+                                "description": "",
+                                "appliesTo": "",
+                                "rolePrivileges": [],
+                                "awsRegionsInfo": "",
+                                "numOfHosts": "",
+                                "name": "",
+                                "numOfDirectSubGroups": "",
+                                "numOfDirectDevices": "",
+                                "id": "",
+                                "azureRegionsInfo": ""
+                            }
+                        ],
+                        "numOfDirectDevices": "",
+                        "id": "",
+                        "enableNetflow": "",
+                        "azureTestResultCode": "",
+                        "effectiveAlertEnabled": "",
+                        "defaultCollectorGroupDescription": "",
+                        "userPermission": "",
+                        "gcpRegionsInfo": "",
+                        "saasTestResultCode": "",
+                        "defaultCollectorGroupId": "",
+                        "groupStatus": "",
+                        "numOfGcpDevices": "",
+                        "azureTestResult": {
+                            "noPermissionServices": {},
+                            "detailLink": {}
+                        },
+                        "parentId": "",
+                        "awsTestResultCode": "",
+                        "customProperties": [
+                            {
+                                "name": "",
+                                "value": ""
+                            }
+                        ],
+                        "numOfHosts": "",
+                        "defaultAutoBalancedCollectorGroupId": "",
+                        "saasTestResult": {
+                            "nonPermissionApisErrors": [],
+                            "invalidStatusUrls": "",
+                            "noPermissionService": "",
+                            "resultCode": "",
+                            "detailLink": "",
+                            "noPermissionApis": []
+                        },
+                        "name": "",
+                        "gcpTestResult": {
+                            "noPermissionServices": [],
+                            "detailLink": "",
+                            "nonPermissionErrors": []
+                        },
+                        "azureRegionsInfo": ""
+                    }
+                ]
+            }
         },
         {
             "operation": "get_device_list",
@@ -264,7 +417,90 @@
                     "editable": true,
                     "visible": true
                 }
-            ]
+            ],
+            "output_schema": {
+                "total": "",
+                "searchId": "",
+                "items": [
+                    {
+                        "logCollectorGroupId": "",
+                        "disableAlerting": "",
+                        "netflowCollectorGroupId": "",
+                        "rolePrivileges": [],
+                        "systemProperties": [
+                            {
+                                "name": "",
+                                "value": ""
+                            }
+                        ],
+                        "isPreferredLogCollectorConfigured": "",
+                        "hostStatus": "",
+                        "autoBalancedCollectorGroupId": "",
+                        "inheritedProperties": [
+                            {
+                                "name": "",
+                                "value": ""
+                            }
+                        ],
+                        "id": "",
+                        "syntheticsCollectorIds": "",
+                        "upTimeInSeconds": "",
+                        "deviceType": "",
+                        "currentCollectorId": "",
+                        "netflowCollectorId": "",
+                        "autoPropsAssignedOn": "",
+                        "updatedOn": "",
+                        "preferredCollectorGroupId": "",
+                        "customProperties": [
+                            {
+                                "name": "",
+                                "value": ""
+                            }
+                        ],
+                        "collectorDescription": "",
+                        "preferredCollectorId": "",
+                        "lastRawdataTime": "",
+                        "name": "",
+                        "deletedTimeInMs": "",
+                        "netflowCollectorGroupName": "",
+                        "azureState": "",
+                        "relatedDeviceId": "",
+                        "logCollectorGroupName": "",
+                        "displayName": "",
+                        "logCollectorDescription": "",
+                        "link": "",
+                        "awsState": "",
+                        "description": "",
+                        "createdOn": "",
+                        "gcpState": "",
+                        "autoPropsUpdatedOn": "",
+                        "scanConfigId": "",
+                        "enableNetflow": "",
+                        "lastDataTime": "",
+                        "hostGroupIds": "",
+                        "resourceIds": [
+                            {
+                                "name": "",
+                                "value": ""
+                            }
+                        ],
+                        "op": "",
+                        "currentLogCollectorId": "",
+                        "logCollectorId": "",
+                        "netflowCollectorDescription": "",
+                        "userPermission": "",
+                        "preferredCollectorGroupName": "",
+                        "autoProperties": [
+                            {
+                                "name": "",
+                                "value": ""
+                            }
+                        ],
+                        "toDeleteTimeInMs": "",
+                        "containsMultiValue": ""
+                    }
+                ]
+            }
         },
         {
             "operation": "get_device_alerts",
@@ -400,7 +636,70 @@
                     "editable": true,
                     "visible": true
                 }
-            ]
+            ],
+            "output_schema": {
+                "total": "",
+                "searchId": "",
+                "items": [
+                    {
+                        "resourceId": "",
+                        "endEpoch": "",
+                        "threshold": "",
+                        "type": "",
+                        "startEpoch": "",
+                        "enableAnomalyAlertGeneration": "",
+                        "internalId": "",
+                        "monitorObjectName": "",
+                        "dataPointName": "",
+                        "dataPointId": "",
+                        "suppressor": "",
+                        "id": "",
+                        "detailMessage": {},
+                        "ruleId": "",
+                        "alertExternalTicketUrl": {
+                            "empty": ""
+                        },
+                        "tenant": "",
+                        "alertValue": "",
+                        "sdted": "",
+                        "SDT": {},
+                        "enableAnomalyAlertSuppression": "",
+                        "receivedList": "",
+                        "monitorObjectGroups": {},
+                        "chainId": "",
+                        "resourceTemplateId": "",
+                        "cleared": "",
+                        "adAlertDesc": "",
+                        "resourceTemplateName": "",
+                        "anomaly": "",
+                        "instanceName": "",
+                        "monitorObjectId": "",
+                        "rule": "",
+                        "ackComment": "",
+                        "alertGroupEntityValue": "",
+                        "instanceId": "",
+                        "suppressDesc": "",
+                        "logPartition": "",
+                        "nextRecipient": "",
+                        "clearExpr": "",
+                        "adAlert": "",
+                        "ackedBy": "",
+                        "severity": "",
+                        "ackedEpoch": "",
+                        "chain": "",
+                        "alertQuery": "",
+                        "subChainId": "",
+                        "logMetaData": "",
+                        "monitorObjectType": "",
+                        "acked": "",
+                        "resourceTemplateType": "",
+                        "clearValue": "",
+                        "instanceDescription": "",
+                        "dependencyRoutingState": "",
+                        "dependencyRole": ""
+                    }
+                ]
+            }
         },
         {
             "operation": "get_report_list",
@@ -457,7 +756,43 @@
                     "editable": true,
                     "visible": true
                 }
-            ]
+            ],
+            "output_schema": {
+                "total": "",
+                "searchId": "",
+                "items": [
+                    {
+                        "lastmodifyUserId": "",
+                        "delivery": "",
+                        "userPermission": "",
+                        "lastGenerateOn": "",
+                        "reportLinkNum": "",
+                        "groupId": "",
+                        "format": "",
+                        "description": "",
+                        "lastGenerateSize": "",
+                        "customReportTypeId": "",
+                        "type": "",
+                        "lastGeneratePages": "",
+                        "reportLinkExpire": "",
+                        "schedule": "",
+                        "recipients": [
+                            {
+                                "additionInfo": "",
+                                "method": "",
+                                "type": "",
+                                "addr": ""
+                            }
+                        ],
+                        "customReportTypeName": "",
+                        "name": "",
+                        "enableViewAsOtherUser": "",
+                        "lastmodifyUserName": "",
+                        "id": "",
+                        "scheduleTimezone": ""
+                    }
+                ]
+            }
         },
         {
             "operation": "get_report_by_id",
@@ -492,7 +827,37 @@
                     "editable": true,
                     "visible": true
                 }
-            ]
+            ],
+            "output_schema": {
+                "lastmodifyUserId": "",
+                "delivery": "",
+                "userPermission": "",
+                "lastGenerateOn": "",
+                "reportLinkNum": "",
+                "groupId": "",
+                "format": "",
+                "description": "",
+                "lastGenerateSize": "",
+                "customReportTypeId": "",
+                "type": "",
+                "lastGeneratePages": "",
+                "reportLinkExpire": "",
+                "schedule": "",
+                "recipients": [
+                    {
+                        "additionInfo": "",
+                        "method": "",
+                        "type": "",
+                        "addr": ""
+                    }
+                ],
+                "customReportTypeName": "",
+                "name": "",
+                "enableViewAsOtherUser": "",
+                "lastmodifyUserName": "",
+                "id": "",
+                "scheduleTimezone": ""
+            }
         }
     ]
 }
