@@ -1,0 +1,486 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "uuid": "a30d9dc8-69f9-4f5b-b2ce-806016b55618",
+      "@type": "WorkflowCollection",
+      "name": "Sample - LogicMonitor - 1.0.0",
+      "description": "LogicMonitor is a SaaS-based performance monitoring platform that provides full visibility into complex, hybrid infrastructures, offering granular performance monitoring and actionable data and insights. This connector enables automated operations such as Get Alert List, Get Device Group List, Get Device List, Get Device Alerts, Get Report List, and Get Report by ID.",
+      "visible": true,
+      "image": null,
+      "recordTags": [
+        "LogicMonitor",
+        "logicmonitor"
+      ],
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "uuid": "07846d36-2362-46c4-9400-8923a4ff1da3",
+          "collection": "/api/3/workflow_collections/a30d9dc8-69f9-4f5b-b2ce-806016b55618",
+          "triggerLimit": null,
+          "description": "Retrieve a list of alerts from LogicMonitor based on the input parameters you have specified.",
+          "name": "Get Alert List",
+          "tag": "#LogicMonitor",
+          "recordTags": [
+            "LogicMonitor",
+            "logicmonitor"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/d0301037-13a8-4c09-a796-0b43c4e86228",
+          "steps": [
+            {
+              "uuid": "d0301037-13a8-4c09-a796-0b43c4e86228",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "route": "b4c9baf8-86c2-4bcd-8e17-b567cd5e89ac",
+                "title": "LogicMonitor: Get Alert List",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "records": "{{vars.input.records[0]}}"
+                  }
+                },
+                "singleRecordExecution": false,
+                "noRecordExecution": true,
+                "executeButtonText": "Execute"
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
+            },
+            {
+              "uuid": "49455112-2778-4cc8-bee0-377a7aae5faf",
+              "@type": "WorkflowStep",
+              "name": "Get Alert List",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "LogicMonitor",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "logicmonitor",
+                "operation": "get_alert_list",
+                "operationTitle": "Get Alert List"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "uuid": "77887d77-2b86-4019-9109-5e362cc0f9e0",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Alert List",
+              "sourceStep": "/api/3/workflow_steps/d0301037-13a8-4c09-a796-0b43c4e86228",
+              "targetStep": "/api/3/workflow_steps/49455112-2778-4cc8-bee0-377a7aae5faf"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "7a2a0cad-4616-4b4a-94ec-a92f8fb0c08c",
+          "collection": "/api/3/workflow_collections/a30d9dc8-69f9-4f5b-b2ce-806016b55618",
+          "triggerLimit": null,
+          "description": "Retrieve a list of device groups from LogicMonitor based on the input parameters you have specified.",
+          "name": "Get Device Group List",
+          "tag": "#LogicMonitor",
+          "recordTags": [
+            "LogicMonitor",
+            "logicmonitor"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/51d7b587-7822-4026-ba51-97304c716945",
+          "steps": [
+            {
+              "uuid": "51d7b587-7822-4026-ba51-97304c716945",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "route": "b3a4811e-df3a-45cf-9f61-aeda64dbe27d",
+                "title": "LogicMonitor: Get Device Group List",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "records": "{{vars.input.records[0]}}"
+                  }
+                },
+                "singleRecordExecution": false,
+                "noRecordExecution": true,
+                "executeButtonText": "Execute"
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
+            },
+            {
+              "uuid": "1931d46b-9fd2-4f3a-b75b-d2061fa16772",
+              "@type": "WorkflowStep",
+              "name": "Get Device Group List",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "LogicMonitor",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "logicmonitor",
+                "operation": "get_device_group_list",
+                "operationTitle": "Get Device Group List"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "uuid": "c23623d4-50cc-4476-8583-d3a83f412edc",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Device Group List",
+              "sourceStep": "/api/3/workflow_steps/51d7b587-7822-4026-ba51-97304c716945",
+              "targetStep": "/api/3/workflow_steps/1931d46b-9fd2-4f3a-b75b-d2061fa16772"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "56e13fda-76cb-4299-a448-725306a39799",
+          "collection": "/api/3/workflow_collections/a30d9dc8-69f9-4f5b-b2ce-806016b55618",
+          "triggerLimit": null,
+          "description": "Retrieve a list of devices from LogicMonitor based on the input parameters you have specified.",
+          "name": "Get Device List",
+          "tag": "#LogicMonitor",
+          "recordTags": [
+            "LogicMonitor",
+            "logicmonitor"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/bfa4bacb-5a8b-4333-a96f-c84703ed4f36",
+          "steps": [
+            {
+              "uuid": "bfa4bacb-5a8b-4333-a96f-c84703ed4f36",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "route": "088acd66-99ff-4ab6-8806-9d1652db5897",
+                "title": "LogicMonitor: Get Device List",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "records": "{{vars.input.records[0]}}"
+                  }
+                },
+                "singleRecordExecution": false,
+                "noRecordExecution": true,
+                "executeButtonText": "Execute"
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
+            },
+            {
+              "uuid": "f49a1290-0a2c-47d6-bf45-3246ef68a1b7",
+              "@type": "WorkflowStep",
+              "name": "Get Device List",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "LogicMonitor",
+                "config": "''",
+                "params": {
+                  "includeDeletedResources": false
+                },
+                "version": "1.0.0",
+                "connector": "logicmonitor",
+                "operation": "get_device_list",
+                "operationTitle": "Get Device List"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "uuid": "55238f1c-f3d1-4bc8-be89-ace5fb626dc0",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Device List",
+              "sourceStep": "/api/3/workflow_steps/bfa4bacb-5a8b-4333-a96f-c84703ed4f36",
+              "targetStep": "/api/3/workflow_steps/f49a1290-0a2c-47d6-bf45-3246ef68a1b7"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "9bd8b1dd-620c-4630-9b22-df23db518757",
+          "collection": "/api/3/workflow_collections/a30d9dc8-69f9-4f5b-b2ce-806016b55618",
+          "triggerLimit": null,
+          "description": "Retrieve alerts for a specific device from LogicMonitor based on the input parameters you have specified.",
+          "name": "Get Device Alerts",
+          "tag": "#LogicMonitor",
+          "recordTags": [
+            "LogicMonitor",
+            "logicmonitor"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/8516ef1c-7c03-4d02-844f-e6cd7d426423",
+          "steps": [
+            {
+              "uuid": "8516ef1c-7c03-4d02-844f-e6cd7d426423",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "route": "e37099ba-7eda-4f78-a839-7461b1724ef8",
+                "title": "LogicMonitor: Get Device Alerts",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "records": "{{vars.input.records[0]}}"
+                  }
+                },
+                "singleRecordExecution": false,
+                "noRecordExecution": true,
+                "executeButtonText": "Execute"
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
+            },
+            {
+              "uuid": "f7590bce-6707-4314-a20c-0e506151ea22",
+              "@type": "WorkflowStep",
+              "name": "Get Device Alerts",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "LogicMonitor",
+                "config": "''",
+                "params": {
+                  "needMessage": false,
+                  "bound": "instances"
+                },
+                "version": "1.0.0",
+                "connector": "logicmonitor",
+                "operation": "get_device_alerts",
+                "operationTitle": "Get Device Alerts"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "uuid": "d2a12407-7d28-4278-8810-819db397a577",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Device Alerts",
+              "sourceStep": "/api/3/workflow_steps/8516ef1c-7c03-4d02-844f-e6cd7d426423",
+              "targetStep": "/api/3/workflow_steps/f7590bce-6707-4314-a20c-0e506151ea22"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "cb7050c4-8f0c-4003-b8ef-c938e5890775",
+          "collection": "/api/3/workflow_collections/a30d9dc8-69f9-4f5b-b2ce-806016b55618",
+          "triggerLimit": null,
+          "description": "Retrieve a list of reports from LogicMonitor based on the input parameters you have specified.",
+          "name": "Get Report List",
+          "tag": "#LogicMonitor",
+          "recordTags": [
+            "LogicMonitor",
+            "logicmonitor"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/e02aef4c-e7ec-4e55-bb93-aeda6ecdcd50",
+          "steps": [
+            {
+              "uuid": "e02aef4c-e7ec-4e55-bb93-aeda6ecdcd50",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "route": "a68d0b8e-4787-440f-9532-3d0b5bf30e19",
+                "title": "LogicMonitor: Get Report List",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "records": "{{vars.input.records[0]}}"
+                  }
+                },
+                "singleRecordExecution": false,
+                "noRecordExecution": true,
+                "executeButtonText": "Execute"
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
+            },
+            {
+              "uuid": "cc45ec06-8339-49d7-9b9d-f44638f9d332",
+              "@type": "WorkflowStep",
+              "name": "Get Report List",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "LogicMonitor",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "logicmonitor",
+                "operation": "get_report_list",
+                "operationTitle": "Get Report List"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "uuid": "1d8c2e62-ee2a-4583-8d54-fdd0db191112",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Report List",
+              "sourceStep": "/api/3/workflow_steps/e02aef4c-e7ec-4e55-bb93-aeda6ecdcd50",
+              "targetStep": "/api/3/workflow_steps/cc45ec06-8339-49d7-9b9d-f44638f9d332"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "d606db84-c1ff-4475-93ee-033ae0ce4fda",
+          "collection": "/api/3/workflow_collections/a30d9dc8-69f9-4f5b-b2ce-806016b55618",
+          "triggerLimit": null,
+          "description": "Retrieve a specific report from LogicMonitor based on the report ID you have specified.",
+          "name": "Get Report by ID",
+          "tag": "#LogicMonitor",
+          "recordTags": [
+            "LogicMonitor",
+            "logicmonitor"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/c34f8977-56aa-41b8-8083-879d58f47e5d",
+          "steps": [
+            {
+              "uuid": "c34f8977-56aa-41b8-8083-879d58f47e5d",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "route": "b65e7a47-0e4c-4ec3-bea5-1a5b31105abd",
+                "title": "LogicMonitor: Get Report by ID",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "records": "{{vars.input.records[0]}}"
+                  }
+                },
+                "singleRecordExecution": false,
+                "noRecordExecution": true,
+                "executeButtonText": "Execute"
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a"
+            },
+            {
+              "uuid": "e10c0537-90c8-47c0-806e-0b9176667c1b",
+              "@type": "WorkflowStep",
+              "name": "Get Report by ID",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "LogicMonitor",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "logicmonitor",
+                "operation": "get_report_by_id",
+                "operationTitle": "Get Report by ID"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "uuid": "6e083029-d961-46f9-9c7b-638f74b6b320",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Report by ID",
+              "sourceStep": "/api/3/workflow_steps/c34f8977-56aa-41b8-8083-879d58f47e5d",
+              "targetStep": "/api/3/workflow_steps/e10c0537-90c8-47c0-806e-0b9176667c1b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
