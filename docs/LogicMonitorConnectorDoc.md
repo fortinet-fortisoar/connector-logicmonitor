@@ -44,7 +44,7 @@ The following automated operations can be included in playbooks and you can also
 
 ### operation: Get Alert List
 #### Input parameters
-<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Filter Criteria</td><td>Specify a filter for the results.
+<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Filter Criteria</td><td>Specify a filter for the results. Refer: https://www.logicmonitor.com/support/rest-api-basic-filters
 </td></tr><tr><td>Fields to Retrieve</td><td>Specify the comma-separated list of fields to include in the response.
 </td></tr><tr><td>Limit</td><td>Specify the number of results to return. A maximum of 1000 records can be retrieved per request.
 </td></tr><tr><td>Offset</td><td>Specify the count of the first few records to skip while retrieving the result. The maximum offset allowed is 10,000 alerts.
@@ -117,7 +117,7 @@ The output contains the following populated JSON schema:
 }</pre>
 ### operation: Get Device Group List
 #### Input parameters
-<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Filter Criteria</td><td>Specify a filter for the results.
+<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Filter Criteria</td><td>Specify a filter for the results. Refer: https://www.logicmonitor.com/support/rest-api-basic-filters
 </td></tr><tr><td>Fields to Retrieve</td><td>Specify the comma-separated list of fields to include in the response.
 </td></tr><tr><td>Limit</td><td>Specify the number of results to return. A maximum of 1000 records can be retrieved per request.
 </td></tr><tr><td>Offset</td><td>Specify the count of the first few records to skip while retrieving the result.
@@ -222,7 +222,7 @@ The output contains the following populated JSON schema:
 <table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Start Time</td><td>Specify the start time for the query.
 </td></tr><tr><td>End Time</td><td>Specify the end time for the query.
 </td></tr><tr><td>Netflow Filter</td><td>Specify a filter for netflow data.
-</td></tr><tr><td>Filter Criteria</td><td>Specify a filter for the results.
+</td></tr><tr><td>Filter Criteria</td><td>Specify a filter for the results. Refer: https://www.logicmonitor.com/support/rest-api-basic-filters
 </td></tr><tr><td>Include Deleted Resources</td><td>Specify whether to include deleted resources.
 </td></tr><tr><td>Fields to Retrieve</td><td>Specify the comma-separated list of fields to include in the response.
 </td></tr><tr><td>Limit</td><td>Specify the number of results to return. A maximum of 1000 records can be retrieved per request.
@@ -324,7 +324,7 @@ The output contains the following populated JSON schema:
 </td></tr><tr><td>Need Message</td><td>Specify whether to include message details.
 </td></tr><tr><td>Custom Columns</td><td>Specify custom columns to include in the response.
 </td></tr><tr><td>Bound</td><td>Specify the bound for the alerts.
-</td></tr><tr><td>Filter Criteria</td><td>Specify a filter for the results.
+</td></tr><tr><td>Filter Criteria</td><td>Specify a filter for the results. Refer: https://www.logicmonitor.com/support/rest-api-basic-filters
 </td></tr><tr><td>Fields to Retrieve</td><td>Specify the comma-separated list of fields to include in the response.
 </td></tr><tr><td>Limit</td><td>Specify the number of results to return. A maximum of 1000 records can be retrieved per request.
 </td></tr><tr><td>Offset</td><td>Specify the count of the first few records to skip while retrieving the result. The maximum offset allowed is 10,000 alerts.
@@ -398,7 +398,7 @@ The output contains the following populated JSON schema:
 }</pre>
 ### operation: Get Report List
 #### Input parameters
-<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Filter Criteria</td><td>Specify a filter for the results.
+<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Filter Criteria</td><td>Specify a filter for the results. Refer: https://www.logicmonitor.com/support/rest-api-basic-filters
 </td></tr><tr><td>Fields to Retrieve</td><td>Specify the comma-separated list of fields to include in the response.
 </td></tr><tr><td>Limit</td><td>Specify the number of results to return. A maximum of 1000 records can be retrieved per request.
 </td></tr><tr><td>Offset</td><td>Specify the count of the first few records to skip while retrieving the result.
